@@ -63,6 +63,15 @@ export default buildConfig({
     },
   }),
   collections: [Pages, Posts, Media, Categories, Users],
+  localization: {
+    locales: [
+      { label: 'Română', code: 'ro' },
+      { label: 'English', code: 'en' },
+      { label: 'Français', code: 'fr' },
+    ],
+    defaultLocale: 'ro',
+    fallback: true,
+  },
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
   plugins,

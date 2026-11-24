@@ -48,6 +48,12 @@
 }
 
 @layer utilities {
+  .nysi-triangle-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+  }
+  .nysi-triangle-top {
+    clip-path: polygon(0 8%, 50% 0, 100% 8%, 100% 100%, 0 100%);
+  }
   .container {
     width: 100%;
     margin-inline: auto;
